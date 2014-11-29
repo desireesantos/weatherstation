@@ -1,16 +1,18 @@
 html,body {
+margin-top: 70px;
 background-size: 100% 100%;
 width: 100%;
 height: 100%;
 padding: 30px;
+background-color: black;
 }
 
 h1{
- padding-top: 30px;	
+ color: white;
  padding-left: 380px; 	
 }
 
-#box{
+.box{
 	display: inline-block;
 	opacity: 0.6;
     border: 2px solid #a1a1a1;
@@ -22,14 +24,14 @@ h1{
     margin: 10px; 
 }
 
-#box img{
+.box img{
 width: 160px;
 margin-top: -8px;
 border-radius: 15px;
 float:left;
 }
 
-#box p{
+.box p{
 font-weight: 200;
 margin-left: 220px;
 font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
