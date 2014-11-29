@@ -4,7 +4,7 @@ var Station =  require('../service/station');
 var StationOut = require('../service/stationOut');
 var ws = require('../ws');
 
-app.put('/p1/:sensors', function (req, res) {
+app.get('/p1/:sensors', function (req, res) {
 updatedWebClientStation(new Station(req.param('sensors')));	
 res.json(new Station(req.param('sensors')));
 });
