@@ -1,12 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="weatherstation">
 <head>
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> 
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+   <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
+  <link rel="stylesheet" href="css/animate.css">
 </head>
 <body>
-   Testando
+
+<div id="box">
+	<img src="image/temperatura.png">
+    <p>{{ sensor0 || 0  }}°C</p>
+</div>
+<div id="box">
+	<img src="image/temperatura.png">
+    <p>{{ sensor1 || 0  }}°C</p>
+</div>
+<div id="box">
+	<img src="image/temperatura.png">
+    <p>{{ sensor2 || 0  }}°C</p>
+</div>
+<div id="box">
+	<img src="image/temperatura.png">
+    <p>{{ sensor3 || 0  }}°C</p>
+</div>
+<div id="box">
+	<img src="image/temperatura.png">
+    <p>{{ sensor4 || 0  }}°C</p>
+</div>
+<div id="box">
+	<img src="image/temperatura.png">
+    <p>{{ sensor5 || 0  }}C</p>
+</div>
+<div id="box">
+	<img src="image/temperatura.png">
+    <p>{{ sensor6 || 0  }}°C</p>
+</div>
+<div id="box">
+	<img src="image/temperatura.png">
+    <p>{{ sensor7 || 0  }}°C</p>
+</div>
+ <a class="fa fa-github-alt fa-4x" href="https://github.com/desireesantos/temcafe" target="_blank"></a>
  <script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.1/angular.min.js"></script>
  <script src="/socket.io/socket.io.js"></script>
+ <script type="text/javascript" src="js/weatherstation.js"></script>
+  <script>
+	$('#box').mouseover(function() {
+		$(this).addClass("animated pulse");
+	});
+
+	$('#box').mouseleave(function() {
+		$(this).removeClass("animated pulse");
+	});
+</script>
 </body>
 </html>
