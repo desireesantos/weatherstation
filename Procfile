@@ -1,1 +1,1 @@
-web: node bin/temcafe  $PORT
+web: node bin/weatherstation  $PORT
